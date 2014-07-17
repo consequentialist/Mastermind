@@ -3,6 +3,7 @@ package mastermind;
 public class Game { // job is to hold code, breaker, run board.
 	
 	private static String code;
+	private int row = 0;
 	public Breaker breaker; //make these private, include method to return
 	public Board board;
 	public Maker maker;
@@ -29,6 +30,12 @@ public class Game { // job is to hold code, breaker, run board.
 	public String code(){
 		return code;
 	}
+	
+	public int getRow(){
+		row++;
+		return row;
+	}
+	
 	
 
 
